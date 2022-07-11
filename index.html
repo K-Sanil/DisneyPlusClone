@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney+</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <nav class="navbar">
+
+        <img src="images/logo.png" alt="brand-logo" class="brand-logo">
+        <ul class="nav-link">
+
+            <li class="nav-items"><a href="#">TV</a></li>
+            <li class="nav-items"><a href="#">Movie</a></li>
+            <li class="nav-items"><a href="#">Sports</a></li>
+            <li class="nav-items"><a href="#">Premium</a></li>
+
+        </ul>
+
+        <div class="right-container">
+
+            <input type="text" id="search-box" placeholder="search">
+            <button class="sub-btn">SUBSCRIBE</button>
+            <a href="#" class="login-link">LOGIN</a>
+        </div>
+
+    </nav>
+
+    <div id="carousel-container">
+
+        <div class="carousel">
+
+            <!--<div class="slider">
+
+                <div class="slider-content">
+                    <h1 class="movie-title">Loki</h1>
+                    <p class="movie-desc">After stealing the Tesseract during the events of Avengers: Endgame (2019), an alternate version of Loki is brought to the mysterious Time Variance Authority (TVA), a bureaucratic organization that exists outside of time and space and monitors the timeline. They give Loki a choice: face being erased from existence due to being a "time variant", or help fix the timeline and stop a greater threat. Loki ends up trapped in his own crime thriller, traveling through time.</p>
+                </div>
+
+                <img src="images/slider 1.PNG" alt="poster">
+            </div>          ~~This was created so that the structure of styling of slider could be made~~ -->   
+
+        </div>
+    </div>
+
+    <div id="video-container">
+
+        <div class="video-card">
+            <img src="images/disney.PNG" class="vidCardImg" alt="">
+            <video src="videos/disney.mp4" muted loop class="cardVid"></video>
+        </div>
+
+        <div class="video-card">
+            <img src="images/marvel.PNG" class="vidCardImg" alt="">
+            <video src="videos/marvel.mp4" muted loop class="cardVid"></video>
+        </div>
+
+        <div class="video-card">
+            <img src="images/star-wars.PNG" class="vidCardImg" alt="">
+            <video src="videos/star-war.mp4" muted loop class="cardVid"></video>
+        </div>
+
+        <div class="video-card">
+            <img src="images/geographic.PNG" class="vidCardImg" alt="">
+            <video src="videos/geographic.mp4" muted loop class="cardVid"></video>
+        </div>
+
+        <div class="video-card">
+            <img src="images/pixar.PNG" class="vidCardImg" alt="">
+            <video src="videos/pixar.mp4" muted loop class="cardVid"></video>
+        </div>
+
+        
+    </div>
+
+    <h1 class="title">Recommended For You</h1>
+
+        <div id="movieList">
+            <button class="preBtn"><img src="images/pre.png" alt="button"></button>
+            <button class="nextBtn"><img src="images/nxt.png" alt="button"></button>
+            <div class="card-container">
+
+                <div class="card">
+                    
+                    <img src="images/poster 1.png" class="cardImg" alt="">
+                    <div class="cardBody">
+
+                        <h2 class="name">Loki</h2>
+                        <h6 class="desc"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h6>
+                        <button class="watchList">add to watchList</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     <script src="data.js"></script> <!--data should be before app.js so we can access it-->
+     <script src="app.js"></script>
+</body>
+</html>
